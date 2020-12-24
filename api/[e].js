@@ -1,7 +1,7 @@
 export default function handler(req, res) {
   const {
-    query: { pid },
+    query: { e },
   } = req
 
-  res.end(`Post: ${pid}`)
+  res.end(`Post: ${e}`)
 }
