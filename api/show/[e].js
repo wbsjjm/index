@@ -4,6 +4,7 @@ export default function handler(req, res) {
   } = req
   const fs=require('fs')
   var dt=fs.readFileSync('../config.json',{encoding:'utf-8'})
-  var htmlstring=``
-  res.end(`Post: ${e}`)
+  console.log(`data:${dt[e]}`)
+  var htmlstring=`<font color="red" size="20">答案：${dt[e]['data']}</font>提交人：${dt[e]['author']}`
+  res.end(htmlstring)
 }
