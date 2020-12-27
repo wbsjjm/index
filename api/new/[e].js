@@ -3,6 +3,6 @@ export default function handler(req, res) {
     query: { e },
   } = req
   var t=require("fs")
-  t
+  t.writeFileSync('../e.json','ssssss')
   res.end(`Post: ${e}`)
 }
